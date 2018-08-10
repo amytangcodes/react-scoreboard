@@ -6,7 +6,7 @@ const Player = ({ name, score, id }) => (
     <div className="player-name">{name}</div>
 
     <div className="player-score">
-      <Counter score={score} />
+      <Counter initialScore={score} />
     </div>
   </div>
 );
