@@ -1,4 +1,4 @@
-# Teamtreehouse React Basics Project
+# Treehouse React Basics Project
 
 Created a scoreboard lightly following along the tutorial but coded out the app in ES6.
 

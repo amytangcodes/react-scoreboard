@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import PropTypes from 'prop-types';        
 import Header from "./components/Header";
 import Player from "./components/Player";
 import "./App.css";
@@ -27,16 +28,26 @@ const playerList = [
 ];
 
 class App extends Component {
+  state = {
+    title: "My Scoreboard"
+  }
+
   render() {
     return (
       <div className="scoreboard">
-        <Header title="My Scoreboard" />
+        <Header title={this.state.title} />
 
         <div className="players">
-          {playerList.map( player => { 
-            console.log(player.playerName, player.score)
-            return <Player name={player.playerName} score={player.score} key={player.id} />
-          }) }
+          {playerList.map(player => {
+            console.log(player.playerName, player.score);
+            return (
+              <Player
+                name={player.playerName}
+                score={player.score}
+                key={player.id}
+              />
+            );
+          })}
         </div>
       </div>
     );

@@ -5,7 +5,7 @@ class Header extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired
   };
-  
+
   render() {
     const { title } = this.props;
 
